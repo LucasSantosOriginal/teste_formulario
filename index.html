@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#080808">
+    <title>Carregando...</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header id="siteHeader" hidden>
+        <h1>legal né?</h1>
+    </header>
+
+    <main class="container">
+        <div id="loader" class="loader-screen">
+            <div class="spinner"></div>
+            <p>Carregando...</p>
+        </div>
+
+        <section id="videoSection" class="video-section" hidden>
+            <video id="prankVideo" controls playsinline preload="auto" autoplay muted>
+                <source src="video.mp4" type="video/mp4">
+                Seu navegador não suporta este vídeo.
+            </video>
+
+            <p id="status" class="status" hidden>
+                Não foi possível carregar o vídeo.
+            </p>
+        </section>
+    </main>
+</body>
+
+</html>
